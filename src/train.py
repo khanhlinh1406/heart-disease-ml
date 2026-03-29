@@ -50,6 +50,7 @@ model = LogisticRegression(max_iter=1000)
 # the model learns the relationship between input features (X) and target (y)
 model.fit(x_train, y_train)
 
-# to save trained model
+# to save trained model and scaler
 import joblib
 joblib.dump(model, "model.pkl")
+joblib.dump(scaler, "scaler.pkl")
